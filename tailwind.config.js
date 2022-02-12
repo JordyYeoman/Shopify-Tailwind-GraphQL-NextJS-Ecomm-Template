@@ -40,6 +40,35 @@ module.exports = {
       fontFamily: {
         sans: ["Inter var", ...defaultTheme.fontFamily.sans],
       },
+      colors: {
+        primary: {
+          100: "#95C8EF",
+          200: "#71B5EA",
+          300: "#4EA3E4",
+          400: "#3C9AE2",
+          500: "#268ddd",
+          600: "#1dabff",
+          700: "#0C2B46",
+        },
+        secondary: {
+          100: "#808AB3",
+          200: "#737EAB",
+          300: "#6672A3",
+          400: "#5C6899",
+          500: "#454E73",
+          600: "#0F111A",
+          700: "#07080D",
+        },
+        tertiary: {
+          100: "#D4ACF2",
+          200: "#BC7FEB",
+          300: "#B470E8",
+          400: "#844EAD",
+          500: "#61397F",
+          600: "#462A5C",
+          700: "#1A1023",
+        },
+      },
     },
   },
   variants: {
