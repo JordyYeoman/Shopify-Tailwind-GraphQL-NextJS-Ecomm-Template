@@ -1,5 +1,6 @@
 import { Fragment, useState } from "react";
 import { Dialog, Popover, Tab, Transition } from "@headlessui/react";
+import Link from "next/link";
 import {
   MenuIcon,
   SearchIcon,
@@ -134,9 +135,9 @@ const navigation = {
     },
   ],
   pages: [
-    { name: "About", href: "#" },
-    { name: "Subscription", href: "#" },
-    { name: "Contact", href: "#" },
+    { name: "About", href: "/about" },
+    { name: "Subscription", href: "/subscription" },
+    { name: "Contact", href: "/contact" },
   ],
 };
 
@@ -279,12 +280,12 @@ export default function Example() {
               <div className="border-t border-gray-200 py-6 px-4 space-y-6">
                 {navigation.pages.map((page) => (
                   <div key={page.name} className="flow-root">
-                    <a
+                    <Link
                       href={page.href}
                       className="-m-2 p-2 block font-medium text-gray-900"
                     >
                       {page.name}
-                    </a>
+                    </Link>
                   </div>
                 ))}
               </div>
@@ -474,13 +475,13 @@ export default function Example() {
                   ))}
 
                   {navigation.pages.map((page) => (
-                    <a
+                    <Link
                       key={page.name}
                       href={page.href}
                       className="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800"
                     >
                       {page.name}
-                    </a>
+                    </Link>
                   ))}
                 </div>
               </Popover.Group>
