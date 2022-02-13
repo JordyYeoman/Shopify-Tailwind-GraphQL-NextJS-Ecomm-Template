@@ -1,46 +1,42 @@
-import Head from "next/head";
-import Image from "next/image";
-import styles from "../styles/Home.module.css";
-import { storefront } from "../utils/index";
-import NavigationBar from "../components/NavigationBar";
 import Hero from "../components/Hero";
-import ProductsPanel from "../components/ProductsPanel";
 import ProductQuickView from "../components/ProductQuickView";
 import CenteredFourItemGridCTA from "../components/CenteredFourItemGridCTA";
 import SmallCTA from "../components/SmallCTA";
+import { storefront } from "../utils/index";
 import ProductPreviewCTA from "../components/ProductPreviewCTA";
 import ProductList from "../components/ProductList";
 import CollectionsList from "../components/CollectionsList";
-import ContactForm from "../components/ContactForm";
-import Footer from "../components/Footer";
+import BasicSmallCTA from "../components/BasicSmallCTA";
+import { useContext, useEffect } from "react";
+import { ProductsContext } from "../components/Layout";
 
 {
   /* <div className={styles.container}></div>; */
 }
 
-export default function Home() {
+export default function Home({ products }) {
+  const [context, setContext] = useContext(ProductsContext);
+  useEffect(() => {
+    setContext(products);
+  }, []);
+
   return (
     <>
-      <Head />
-      <NavigationBar />
       <Hero />
+      <BasicSmallCTA />
       <ProductList />
-      <ProductPreviewCTA />
       <CenteredFourItemGridCTA />
+      <CollectionsList />
+      {/* <ProductPreviewCTA /> */}
       {/* // Need to pass toggle for modal view */}
       <ProductQuickView />
-      <ProductsPanel />
-      <CollectionsList />
       <SmallCTA />
-      <ContactForm />
-      <Footer />
     </>
   );
 }
 
 export async function getStaticProps() {
   const { data } = await storefront(productsQuery);
-  console.log(data);
   return {
     props: {
       // products
@@ -51,12 +47,14 @@ export async function getStaticProps() {
 const gql = String.raw;
 const productsQuery = gql`
   query Products {
-    products(first: 50) {
+    products(first: 40) {
       edges {
         node {
           title
           handle
           tags
+          onlineStoreUrl
+          id
           priceRange {
             minVariantPrice {
               amount

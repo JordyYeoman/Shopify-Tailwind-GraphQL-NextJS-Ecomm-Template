@@ -9,71 +9,71 @@ import {
 
 const navigation = {
   categories: [
+    // {
+    //   id: "women",
+    //   name: "Women",
+    //   featured: [
+    //     {
+    //       name: "New Arrivals",
+    //       href: "#",
+    //       imageSrc:
+    //         "https://tailwindui.com/img/ecommerce-images/mega-menu-category-01.jpg",
+    //       imageAlt:
+    //         "Models sitting back to back, wearing Basic Tee in black and bone.",
+    //     },
+    //     {
+    //       name: "Basic Tees",
+    //       href: "#",
+    //       imageSrc:
+    //         "https://tailwindui.com/img/ecommerce-images/mega-menu-category-02.jpg",
+    //       imageAlt:
+    //         "Close up of Basic Tee fall bundle with off-white, ochre, olive, and black tees.",
+    //     },
+    //   ],
+    //   sections: [
+    //     {
+    //       id: "clothing",
+    //       name: "Clothing",
+    //       items: [
+    //         { name: "Tops", href: "#" },
+    //         { name: "Dresses", href: "#" },
+    //         { name: "Pants", href: "#" },
+    //         { name: "Denim", href: "#" },
+    //         { name: "Sweaters", href: "#" },
+    //         { name: "T-Shirts", href: "#" },
+    //         { name: "Jackets", href: "#" },
+    //         { name: "Activewear", href: "#" },
+    //         { name: "Browse All", href: "#" },
+    //       ],
+    //     },
+    //     {
+    //       id: "accessories",
+    //       name: "Accessories",
+    //       items: [
+    //         { name: "Watches", href: "#" },
+    //         { name: "Wallets", href: "#" },
+    //         { name: "Bags", href: "#" },
+    //         { name: "Sunglasses", href: "#" },
+    //         { name: "Hats", href: "#" },
+    //         { name: "Belts", href: "#" },
+    //       ],
+    //     },
+    //     {
+    //       id: "brands",
+    //       name: "Brands",
+    //       items: [
+    //         { name: "Full Nelson", href: "#" },
+    //         { name: "My Way", href: "#" },
+    //         { name: "Re-Arranged", href: "#" },
+    //         { name: "Counterfeit", href: "#" },
+    //         { name: "Significant Other", href: "#" },
+    //       ],
+    //     },
+    //   ],
+    // },
     {
-      id: "women",
-      name: "Women",
-      featured: [
-        {
-          name: "New Arrivals",
-          href: "#",
-          imageSrc:
-            "https://tailwindui.com/img/ecommerce-images/mega-menu-category-01.jpg",
-          imageAlt:
-            "Models sitting back to back, wearing Basic Tee in black and bone.",
-        },
-        {
-          name: "Basic Tees",
-          href: "#",
-          imageSrc:
-            "https://tailwindui.com/img/ecommerce-images/mega-menu-category-02.jpg",
-          imageAlt:
-            "Close up of Basic Tee fall bundle with off-white, ochre, olive, and black tees.",
-        },
-      ],
-      sections: [
-        {
-          id: "clothing",
-          name: "Clothing",
-          items: [
-            { name: "Tops", href: "#" },
-            { name: "Dresses", href: "#" },
-            { name: "Pants", href: "#" },
-            { name: "Denim", href: "#" },
-            { name: "Sweaters", href: "#" },
-            { name: "T-Shirts", href: "#" },
-            { name: "Jackets", href: "#" },
-            { name: "Activewear", href: "#" },
-            { name: "Browse All", href: "#" },
-          ],
-        },
-        {
-          id: "accessories",
-          name: "Accessories",
-          items: [
-            { name: "Watches", href: "#" },
-            { name: "Wallets", href: "#" },
-            { name: "Bags", href: "#" },
-            { name: "Sunglasses", href: "#" },
-            { name: "Hats", href: "#" },
-            { name: "Belts", href: "#" },
-          ],
-        },
-        {
-          id: "brands",
-          name: "Brands",
-          items: [
-            { name: "Full Nelson", href: "#" },
-            { name: "My Way", href: "#" },
-            { name: "Re-Arranged", href: "#" },
-            { name: "Counterfeit", href: "#" },
-            { name: "Significant Other", href: "#" },
-          ],
-        },
-      ],
-    },
-    {
-      id: "men",
-      name: "Men",
+      id: "Shop",
+      name: "Shop",
       featured: [
         {
           name: "New Arrivals",
@@ -97,11 +97,11 @@ const navigation = {
           id: "clothing",
           name: "Clothing",
           items: [
-            { name: "Tops", href: "#" },
-            { name: "Pants", href: "#" },
+            // { name: "Tops", href: "#" },
+            // { name: "Pants", href: "#" },
             { name: "Sweaters", href: "#" },
             { name: "T-Shirts", href: "#" },
-            { name: "Jackets", href: "#" },
+            // { name: "Jackets", href: "#" },
             { name: "Activewear", href: "#" },
             { name: "Browse All", href: "#" },
           ],
@@ -110,30 +110,33 @@ const navigation = {
           id: "accessories",
           name: "Accessories",
           items: [
-            { name: "Watches", href: "#" },
-            { name: "Wallets", href: "#" },
-            { name: "Bags", href: "#" },
-            { name: "Sunglasses", href: "#" },
-            { name: "Hats", href: "#" },
-            { name: "Belts", href: "#" },
+            { name: "Phone Cases", href: "#" },
+            { name: "Notebooks", href: "#" },
+            // { name: "Watches", href: "#" },
+            // { name: "Wallets", href: "#" },
+            // { name: "Bags", href: "#" },
+            // { name: "Sunglasses", href: "#" },
+            // { name: "Hats", href: "#" },
+            // { name: "Belts", href: "#" },
           ],
         },
-        {
-          id: "brands",
-          name: "Brands",
-          items: [
-            { name: "Re-Arranged", href: "#" },
-            { name: "Counterfeit", href: "#" },
-            { name: "Full Nelson", href: "#" },
-            { name: "My Way", href: "#" },
-          ],
-        },
+        // {
+        //   id: "brands",
+        //   name: "Brands",
+        //   items: [
+        //     { name: "Re-Arranged", href: "#" },
+        //     { name: "Counterfeit", href: "#" },
+        //     { name: "Full Nelson", href: "#" },
+        //     { name: "My Way", href: "#" },
+        //   ],
+        // },
       ],
     },
   ],
   pages: [
-    { name: "Company", href: "#" },
-    { name: "Stores", href: "#" },
+    { name: "About", href: "#" },
+    { name: "Subscription", href: "#" },
+    { name: "Contact", href: "#" },
   ],
 };
 
@@ -324,9 +327,9 @@ export default function Example() {
       </Transition.Root>
 
       <header className="relative bg-white">
-        <p className="bg-primary-600 h-10 flex items-center justify-center text-sm font-medium text-white px-4 sm:px-6 lg:px-8">
+        {/* <p className="bg-primary-600 h-10 flex items-center justify-center text-sm font-medium text-white px-4 sm:px-6 lg:px-8">
           Get free delivery on orders over $100
-        </p>
+        </p> */}
 
         <nav
           aria-label="Top"
@@ -344,14 +347,17 @@ export default function Example() {
               </button>
 
               {/* Logo */}
-              <div className="ml-4 flex lg:ml-0">
-                <a href="#">
-                  <span className="sr-only">Workflow</span>
-                  <img
-                    className="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/workflow-mark.svg?color=indigo&shade=600"
-                    alt=""
-                  />
+              <div className="ml-4 flex lg:ml-0 items-center">
+                <a href="/">
+                  <span className="sr-only">Limitless</span>
+                  <div className="h-8 w-auto flex items-center border-y-2 border-transparent hover:border-primary-600 duration-200">
+                    <span className="text-primary-600 text-2xl font-bold -skew-x-12">
+                      L
+                    </span>
+                    <span className="text-secondary-600 text-2xl font-bold -skew-x-12">
+                      M
+                    </span>
+                  </div>
                 </a>
               </div>
 

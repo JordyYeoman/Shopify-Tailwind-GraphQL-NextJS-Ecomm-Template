@@ -11,9 +11,6 @@ export async function storefront(query, variables = {}) {
     body: JSON.stringify({ query }),
   };
 
-  console.log(process.env.NEXT_PUBLIC_SHOPIFY_STOREFRONT_ACCESSTOKEN);
-  console.log(process.env.NEXT_PUBLIC_SHOPIFY_STORE_DOMAIN);
-
   try {
     const data = await fetch(URL, options).then((response) => {
       return response.json();
@@ -22,4 +19,12 @@ export async function storefront(query, variables = {}) {
   } catch (error) {
     throw new Error("Products not fetched");
   }
+}
+
+export function formatPrice(number) {
+  return Intl.NumberFormat("en-AU", {
+    style: "currency",
+    currency: "AUD",
+    minimumFractionDigits: 1,
+  }).format(number);
 }
